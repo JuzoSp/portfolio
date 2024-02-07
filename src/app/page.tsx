@@ -1,6 +1,6 @@
 import Hero from "@/components/main/Hero";
 import Skills from "@/components/main/Skills";
-
+import "./globals.css";
 export default function Home() {
   return (
     <main className="h-full w-full ">
