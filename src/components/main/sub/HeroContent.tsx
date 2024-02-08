@@ -37,10 +37,11 @@ const HeroContent = () => {
                     Je suis un développeur de logiciels front-end avec une expérience dans le développement de sites Web, mobiles et logiciels. Découvrez mes projets et mes compétences
                 </motion.p>
                 <motion.a
+                    href='https://www.linkedin.com/in/hasina-andriamahandry-26027a214/'
                     variants={slideInFromLeft(1)}
                     className='py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]'
                 >
-                    Cliquez-ici
+                    Me contacter
                 </motion.a>
             </div>
 
