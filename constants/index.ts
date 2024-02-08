@@ -191,21 +191,21 @@ export const Full_stack = [
     {
         skill_name: "React Native",
         Image: "/ReactNative .png",
-        width: 60,
-        height: 60,
-    }, ,
+        width: 70,
+        height: 70,
+    },
     {
         skill_name: "Docker",
         Image: "/docker.webp",
-        width: 60,
-        height: 60,
+        width: 70,
+        height: 70,
     },
 
     {
         skill_name: "Figma",
         Image: "/figma.png",
         width: 50,
-        height: 40,
+        height: 50,
     },
 
 ];
