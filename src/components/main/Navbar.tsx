@@ -24,9 +24,9 @@ const Navbar = () => {
 
                 <div className='w-[500px] h-full flex flex-row items-center justify-between md:mr-20'>
                     <div className='flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200'>
-                        <a href="#about-me" className='cursor-pointer rounded-full'>About me</a>
-                        <a href="#skills" className='cursor-pointer rounded-full'>Skills</a>
-                        <a href="#projects" className='cursor-pointer rounded-full'>Projects</a>
+                        <a href="#about-me" className='cursor-pointer hover:bg-gradient-to-tr from-purple-600 to-cyan-500 p-2 hover:opacity-30 rounded-full'>À propos</a>
+                        <a href="#skills" className='cursor-pointer hover:bg-gradient-to-tr from-purple-600 to-cyan-500 p-2 hover:opacity-30 rounded-full'>Compétences</a>
+                        <a href="#projects" className='cursor-pointer hover:bg-gradient-to-tr from-purple-600 to-cyan-500 p-2 hover:opacity-30 rounded-full'>Projets</a>
                     </div>
                 </div>
 

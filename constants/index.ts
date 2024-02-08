@@ -107,8 +107,8 @@ export const Frontend_skill = [
     {
         skill_name: "Java Script",
         Image: "/js.png",
-        width: 65,
-        height: 65,
+        width: 60,
+        height: 60,
     },
     {
         skill_name: "Tailwind Css",
@@ -164,20 +164,20 @@ export const Backend_skill = [
     {
         skill_name: "Postger SQL",
         Image: "/postger.png",
-        width: 70,
-        height: 70,
+        width: 60,
+        height: 60,
     },
     {
         skill_name: "My SQL",
         Image: "/mysql.png",
-        width: 70,
-        height: 70,
+        width: 60,
+        height: 60,
     },
     {
         skill_name: "Prisma",
         Image: "/prisma.webp",
-        width: 70,
-        height: 70,
+        width: 60,
+        height: 60,
     },
     {
         skill_name: "Graphql",
@@ -191,14 +191,14 @@ export const Full_stack = [
     {
         skill_name: "React Native",
         Image: "/ReactNative .png",
-        width: 70,
-        height: 70,
+        width: 60,
+        height: 60,
     }, ,
     {
         skill_name: "Docker",
         Image: "/docker.webp",
-        width: 70,
-        height: 70,
+        width: 60,
+        height: 60,
     },
 
     {
