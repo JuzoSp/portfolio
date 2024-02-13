@@ -15,7 +15,7 @@ const Projects = () => {
                     description='Conçue pour répondre aux besoins spécifiques d un pharmacie, cette plateforme offre sept services de gestion essentiels pour optimiser les opérations quotidiennes.'
                 />
                 <ProjectCard
-                    src='/lgcfp2.png'
+                    src='/lgcfp2.webp'
                     title='Logicel de gestion collaboratives de formation professionnels'
                     description='Ce logiciel est conçue au sein de l entreprise Upskill pour la gestion des formation professionnels offert par cet entreprise. Je contribue au dévelopement de ce logiciel.'
                 />
