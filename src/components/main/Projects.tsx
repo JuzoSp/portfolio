@@ -10,7 +10,7 @@ const Projects = () => {
             </h1>
             <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
                 <ProjectCard
-                    src='/Pharmacy.png'
+                    src='/Pharmacy.webp'
                     title='Application Web de Gestion de Pharmacie'
                     description='Conçue pour répondre aux besoins spécifiques d un pharmacie, cette plateforme offre sept services de gestion essentiels pour optimiser les opérations quotidiennes.'
                 />
@@ -20,12 +20,12 @@ const Projects = () => {
                     description='Ce logiciel est conçue au sein de l entreprise Upskill pour la gestion des formation professionnels offert par cet entreprise. Je contribue au dévelopement de ce logiciel.'
                 />
                 <ProjectCard
-                    src='/Agence_Immo.png'
+                    src='/Agence_Immo.webp'
                     title='Application web Agence Immobilière'
                     description='Application web d agence immobilière est également entièrement sécurisée garantissant la confidentialité des données. Utilisant le système d authentification offert par Laravel. J ai conçu système sécurisé des utilisateur connéctés.'
                 />
                 <ProjectCard
-                    src='/Portfolio.png'
+                    src='/Portfolio.webp'
                     title='Portfolio SpaceWebsite'
                     description='Ce site représente mon portfolio, et quelques projets que j avais réalisé. Conçue avec Next.js.'
                 />
