@@ -29,11 +29,6 @@ const Footer: React.FC = () => {
 
   const socialLinks: SocialLink[] = [
     {
-      icon: <RxDiscordLogo />,
-      label: "Discord",
-      href: "https://discord.com/hasina9950/",
-    },
-    {
       icon: <RxGithubLogo />,
       label: "GitHub",
       href: "https://github.com/JuzoSp/",

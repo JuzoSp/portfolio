@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import ProjectCard from "./sub/ProjectCard";
 
@@ -51,20 +51,45 @@ const projects = [
 ];
 
 const Projects = () => {
+  const carouselRef = useRef<HTMLDivElement>(null);
+  const [width, setWidth] = useState(0);
+  const [isDesktop, setIsDesktop] = useState(true);
+
+  useEffect(() => {
+    // Vérifie si l'écran est desktop ou mobile
+    const handleResize = () => setIsDesktop(window.innerWidth >= 768);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    if (carouselRef.current) {
+      const scrollWidth = carouselRef.current.scrollWidth;
+      const clientWidth = carouselRef.current.clientWidth;
+      setWidth(scrollWidth - clientWidth);
+    }
+  }, [isDesktop]);
+
   return (
     <section id="projects" className="py-20 px-4 md:px-10">
       <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mb-10 text-center">
         Mes Projets
       </h1>
 
-      {/* Carrousel horizontal */}
       <motion.div
-        className="flex gap-6 overflow-x-scroll scrollbar-hide py-4"
-        drag="x"
-        dragConstraints={{ left: -1000, right: 0 }}
+        ref={carouselRef}
+        className="flex gap-6 overflow-x-auto md:overflow-x-hidden scrollbar-hide snap-x snap-mandatory py-4"
+        drag={isDesktop ? "x" : false} // drag uniquement sur desktop
+        dragConstraints={{ left: -width, right: 0 }}
+        whileTap={{ cursor: isDesktop ? "grabbing" : "auto" }}
+        style={{ WebkitOverflowScrolling: "touch" }} // smooth scroll mobile
       >
         {projects.map((project, idx) => (
-          <motion.div key={idx} className="min-w-[280px] md:min-w-[320px] flex-shrink-0">
+          <motion.div
+            key={idx}
+            className="min-w-[260px] sm:min-w-[280px] md:min-w-[320px] flex-shrink-0 snap-start"
+          >
             <ProjectCard
               src={project.src}
               title={project.title}
